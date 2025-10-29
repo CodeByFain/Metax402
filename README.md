@@ -1,4 +1,4 @@
-# MetaPay402, Meta Payment Processing via X402
+# Meta Payment Processing via X402
 
 ## 🧩 Overview
 
