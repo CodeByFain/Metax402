@@ -1,0 +1,14 @@
+from fastapi import FastAPI
+from metapay402_fastapi import payment_required, init_x402, X402Config
+
+app = FastAPI()
+init_x402(X402Config(
+    payment_address=os.environ["X402_PAYMENT_ADDRESS"],
+    token_mint=os.environ["X402_TOKEN_MINT"],
+    network=os.environ.get("X402_NETWORK", "solana-devnet"),
+))
+
+@app.get("/premium-data")
+@payment_required(amount="0.10")
+async def premium():
+    return {"data": "Premium content"}
