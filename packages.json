@@ -1,0 +1,62 @@
+{
+  "name": "@metapay402/monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MetaPay402 — Meta Payment Processing via X402. A cross-language SDK for autonomous payments between APIs, AI agents, and services using HTTP 402 and Solana micropayments.",
+  "author": "MetaPay402 Team",
+  "license": "MIT",
+  "homepage": "https://github.com/<your-username>/metapay402",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<your-username>/metapay402.git"
+  },
+  "keywords": [
+    "metapay402",
+    "x402",
+    "meta",
+    "solana",
+    "micropayments",
+    "http402",
+    "ai-agents",
+    "blockchain-payments",
+    "langchain",
+    "express",
+    "fastapi"
+  ],
+  "workspaces": [
+    "packages/typescript/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "lint": "pnpm -r run lint",
+    "test": "pnpm -r run test",
+    "clean": "rm -rf dist node_modules pnpm-lock.yaml",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.1",
+    "eslint": "^9.0.0",
+    "prettier": "^3.1.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "pnpm": {
+    "overrides": {
+      "typescript": "^5.4.0"
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/<your-username>/metapay402/issues"
+  }
+}
