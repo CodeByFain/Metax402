@@ -1,0 +1,4 @@
+from metapay402_client import X402AutoClient
+client = X402AutoClient(wallet_keypair=keypair)
+resp = await client.fetch("http://localhost:3000/premium-data")
+print(resp.json())
