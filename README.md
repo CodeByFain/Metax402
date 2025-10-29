@@ -1,4 +1,4 @@
-# MetaPay402: Crypto Payments for Meta Services and AI Agents
+# Metax402: Crypto Payments for Meta Services and AI Agents
 
 > Empower Meta services, APIs, and AI agents to process autonomous, on-chain payments using the HTTP 402 Payment Required standard powered by the Solana blockchain.
 > 
