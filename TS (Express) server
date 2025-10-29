@@ -1,0 +1,15 @@
+import express from "express";
+import { initX402, X402Config, paymentRequired } from "@metapay402/express";
+
+const app = express();
+initX402(new X402Config({
+  paymentAddress: process.env.X402_PAYMENT_ADDRESS!,
+  tokenMint: process.env.X402_TOKEN_MINT!,
+  network: process.env.X402_NETWORK || "solana-devnet",
+}));
+
+app.get("/premium-data", paymentRequired({ amount: "0.10" }), (_req, res) =>
+  res.json({ data: "Premium content" })
+);
+
+app.listen(3000);
