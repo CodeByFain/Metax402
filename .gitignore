@@ -1,0 +1,89 @@
+# MetaPay402 .gitignore
+
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# =====================
+# TypeScript / Node.js
+# =====================
+node_modules/
+dist/
+lib/
+coverage/
+
+# =====================
+# Environment Variables
+# =====================
+.env
+.env.*
+*.env.local
+
+# =====================
+# Virtual Environments
+# =====================
+.venv/
+venv/
+
+# =====================
+# OS / Editor Files
+# =====================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# =====================
+# Test / Cache Files
+# =====================
+.pytest_cache/
+.cache/
+coverage.xml
+.nyc_output/
+
+# =====================
+# Logs
+# =====================
+*.log
+
+# =====================
+# Monorepo Specific
+# =====================
+pnpm-lock.yaml
+uv.lock
+
+# =====================
+# Miscellaneous
+# =====================
+*.bak
+*.tmp
+
+# =====================
+# Generated Documentation
+# =====================
+/site/
+/docs/build/
+
+# =====================
+# Compiled Artifacts
+# =====================
+*.so
+*.pyd
+
+# =====================
+# Jupyter Checkpoints
+# =====================
+.ipynb_checkpoints/
+
+# =====================
+# Local Data
+# =====================
+local_data/
